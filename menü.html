@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* BANNER */
+    .banner {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80') center/cover;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 48px;
+        margin: 0;
+        text-shadow: 2px 2px 10px black;
+    }
+
+    .banner p {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #d4af37;
+        font-weight: bold;
+    }
+
+    /* CONTENT */
+    .container {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .bolum {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .bolum h2 {
+        color: #001a3d;
+        border-left: 6px solid #d4af37;
+        padding-left: 12px;
+        font-size: 24px;
+    }
+
+    .bolum p {
+        line-height: 1.7;
+        font-size: 17px;
+    }
+
+    /* DUYURULAR */
+    .duyurular {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .duyuru {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #001a3d;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .duyuru h3 {
+        margin: 0;
+        color: #001a3d;
+    }
+
+    .duyuru p {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    /* İSTATİSTİKLER */
+    .istatistikler {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .istatistik {
+        background: #001a3d;
+        color: white;
+        padding: 25px;
+        border-radius: 10px;
+        width: 28%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .istatistik h3 {
+        font-size: 32px;
+        margin: 0;
+        color: #d4af37;
+    }
+
+    .istatistik p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+<a href="profil.html">Profilim</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>Gazi Gürkan Taş Anadolu Lisesi</h1>
+    <p>Disiplin ve düzenle yükseliriz</p>
+</div>
+
+<div class="container">
+
+    <div class="bolum">
+        <h2>Okulumuz</h2>
+        <p>
+            Gazi Gürkan Taş Anadolu Lisesi, akademik başarıyı, disiplinli eğitim anlayışını ve modern öğretim
+            yöntemlerini bir araya getiren köklü bir eğitim kurumudur. Amacımız; öğrencilerimizi hem akademik
+            hem de sosyal açıdan geleceğe en güçlü şekilde hazırlamaktır.
+        </p>
+    </div>
+
+    <div class="bolum">
+        <h2>Güncel Duyurular</h2>
+
+        <div class="duyurular">
+            <div class="duyuru">
+                <h3>2026 Kayıtları Başladı</h3>
+                <p>Yeni dönem öğrenci kayıtlarımız başlamıştır. Kayıt için “Kayıt” sayfasını ziyaret ediniz.</p>
+            </div>
+
+            <div class="duyuru">
+                <h3>YKS Başarı Oranımız</h3>
+                <p>2025 YKS sonuçlarına göre okulumuz %87 başarı oranı ile rekor kırmıştır.</p>
+            </div>
+
+            <div class="duyuru">
+                <h3>Disiplin Yönetmeliği Güncellendi</h3>
+                <p>Okul disiplin kurallarımız güncellenmiştir. Tüm öğrencilerimizin incelemesi önemle rica olunur.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bolum">
+        <h2>Başarı İstatistikleri</h2>
+
+        <div class="istatistikler">
+            <div class="istatistik">
+                <h3>87%</h3>
+                <p>YKS Başarı Oranı</p>
+            </div>
+
+            <div class="istatistik">
+                <h3>0</h3>
+                <p>Disiplin Cezası (2025)</p>
+            </div>
+
+            <div class="istatistik">
+                <h3>1200+</h3>
+                <p>Aktif Öğrenci</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>

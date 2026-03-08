@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duyurular – Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* BAŞLIK */
+    .baslik {
+        background: #001a3d;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .baslik h1 {
+        margin: 0;
+        font-size: 42px;
+        color: #d4af37;
+    }
+
+    .baslik p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* İÇERİK */
+    .container {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    /* DUYURU KARTLARI */
+    .duyuru-listesi {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .duyuru {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 6px solid #001a3d;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        transition: 0.2s;
+    }
+
+    .duyuru:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 18px rgba(0,0,0,0.15);
+    }
+
+    .duyuru h3 {
+        margin: 0;
+        color: #001a3d;
+        font-size: 20px;
+    }
+
+    .tarih {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #d4af37;
+        font-weight: bold;
+    }
+
+    .duyuru p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+<div class="baslik">
+    <h1>Duyurular</h1>
+    <p>Okulumuzdan en güncel haberler ve bilgilendirmeler</p>
+</div>
+
+<div class="container">
+
+    <div class="duyuru-listesi">
+
+        <div class="duyuru">
+            <h3>2026 Öğrenci Kayıtları Başladı</h3>
+            <div class="tarih">01 Mart 2026</div>
+            <p>
+                Yeni dönem öğrenci kayıtlarımız başlamıştır. Kayıt işlemleri için “Kayıt” sayfasını ziyaret edebilir
+                veya okul yönetimi ile iletişime geçebilirsiniz.
+            </p>
+        </div>
+
+        <div class="duyuru">
+            <h3>YKS 2025 Başarı Oranı Açıklandı</h3>
+            <div class="tarih">15 Şubat 2026</div>
+            <p>
+                Okulumuz, 2025 YKS sonuçlarına göre %87 başarı oranı ile büyük bir başarıya imza atmıştır.
+                Tüm öğrencilerimizi tebrik ediyoruz.
+            </p>
+        </div>
+
+        <div class="duyuru">
+            <h3>Disiplin Yönetmeliği Güncellendi</h3>
+            <div class="tarih">10 Ocak 2026</div>
+            <p>
+                Okul disiplin kurallarımız güncellenmiştir. Tüm öğrencilerimizin yeni yönetmeliği incelemesi önemle rica olunur.
+            </p>
+        </div>
+
+        <div class="duyuru">
+            <h3>Robotik Kulübü Yarışma Birinciliği</h3>
+            <div class="tarih">22 Aralık 2025</div>
+            <p>
+                Robotik ve Kodlama Kulübümüz, il genelinde düzenlenen teknoloji yarışmasında birincilik elde etmiştir.
+            </p>
+        </div>
+
+        <div class="duyuru">
+            <h3>Okul Kütüphanesi Yenilendi</h3>
+            <div class="tarih">05 Aralık 2025</div>
+            <p>
+                Kütüphanemiz modern tasarım ve yeni kaynaklarla tamamen yenilenmiştir. Öğrencilerimizin kullanımına açılmıştır.
+            </p>
+        </div>
+
+        <div class="duyuru">
+            <h3>Yeni Spor Salonu Açıldı</h3>
+            <div class="tarih">20 Kasım 2025</div>
+            <p>
+                Okulumuzun yeni spor salonu hizmete girmiştir. Basketbol, voleybol ve fitness alanları mevcuttur.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>

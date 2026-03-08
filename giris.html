@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Öğrenci Giriş – Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* GİRİŞ KUTUSU */
+    .giris-kutu {
+        width: 400px;
+        margin: 80px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .giris-kutu img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #001a3d;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+        color: #001a3d;
+        text-align: left;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 25px;
+        padding: 15px;
+        width: 100%;
+        background: #001a3d;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #003b7a;
+    }
+
+    .hata {
+        margin-top: 15px;
+        color: red;
+        font-weight: bold;
+        display: none;
+    }
+
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+        font-size: 15px;
+    }
+</style>
+
+<script>
+function girisYap() {
+    let okulNo = document.getElementById("okulno").value;
+    let sifre = document.getElementById("sifre").value;
+
+    // Örnek giriş bilgileri (istersen gerçek veri tabanı gibi genişletebilirim)
+    let dogruNo = "1234";
+    let dogruSifre = "1234";
+
+    if (okulNo === dogruNo && sifre === dogruSifre) {
+        window.location.href = "profil.html?ad=Öğrenci&tc=00000000000&dogum=2008-01-01&sinif=9. Sınıf";
+    } else {
+        document.getElementById("hata").style.display = "block";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+<div class="giris-kutu">
+    <img src="LOGO.png" alt="Logo">
+    <h2>Öğrenci Giriş Sistemi</h2>
+
+    <label>Okul Numarası</label>
+    <input type="text" id="okulno" placeholder="Örn: 1234">
+
+    <label>Şifre</label>
+    <input type="password" id="sifre" placeholder="Şifrenizi giriniz">
+
+    <button onclick="girisYap()">Giriş Yap</button>
+
+    <a href="kayit.html" class="kayit-btn">Kayıt Ol</a>
+
+    <div class="hata" id="hata">❗ Hatalı okul numarası veya şifre</div>
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>

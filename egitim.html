@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eğitim – Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* BAŞLIK */
+    .baslik {
+        background: #001a3d;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .baslik h1 {
+        margin: 0;
+        font-size: 42px;
+        color: #d4af37;
+    }
+
+    .baslik p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* İÇERİK */
+    .container {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .bolum {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .bolum h2 {
+        color: #001a3d;
+        border-left: 6px solid #d4af37;
+        padding-left: 12px;
+        font-size: 24px;
+    }
+
+    .bolum p, .bolum li {
+        line-height: 1.7;
+        font-size: 17px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    /* KARTLAR */
+    .kartlar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .kart {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #001a3d;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .kart h3 {
+        margin: 0;
+        color: #001a3d;
+    }
+
+    .kart p {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+<div class="baslik">
+    <h1>Eğitim Sistemi</h1>
+    <p>Disiplinli, modern ve teknoloji odaklı eğitim yaklaşımı</p>
+</div>
+
+<div class="container">
+
+    <div class="bolum">
+        <h2>Eğitim Modelimiz</h2>
+        <p>
+            Gazi Gürkan Taş Anadolu Lisesi, öğrencilerine çağdaş, disiplinli ve yenilikçi bir eğitim modeli sunar.
+            Akademik başarıyı; teknoloji, bilim, sanat ve sporla destekleyen bütünsel bir yaklaşım benimseriz.
+        </p>
+    </div>
+
+    <div class="bolum">
+        <h2>Ders Programı</h2>
+        <p>Okulumuzda uygulanan ders programı, MEB müfredatına uygun olarak hazırlanmış olup öğrencilerin:</p>
+
+        <ul>
+            <li>Analitik düşünme becerilerini geliştirmeyi</li>
+            <li>Akademik başarılarını artırmayı</li>
+            <li>Teknoloji ve bilime uyum sağlamalarını</li>
+            <li>Disiplinli çalışma alışkanlığı kazanmalarını</li>
+        </ul>
+
+        <p>amaçlamaktadır.</p>
+    </div>
+
+    <div class="bolum">
+        <h2>Yabancı Dil Eğitimi</h2>
+
+        <div class="kartlar">
+            <div class="kart">
+                <h3>İngilizce</h3>
+                <p>Hazırlık sınıfı ve üst sınıflarda yoğunlaştırılmış İngilizce programı uygulanır.</p>
+            </div>
+
+            <div class="kart">
+                <h3>Almanca</h3>
+                <p>İkinci yabancı dil olarak Almanca eğitimi verilir.</p>
+            </div>
+
+            <div class="kart">
+                <h3>Konuşma Atölyeleri</h3>
+                <p>Öğrencilerin pratik yapabilmesi için konuşma kulüpleri düzenlenir.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bolum">
+        <h2>Kulüpler ve Sosyal Faaliyetler</h2>
+
+        <div class="kartlar">
+            <div class="kart">
+                <h3>Robotik ve Kodlama</h3>
+                <p>Teknoloji odaklı projeler ve yarışmalar.</p>
+            </div>
+
+            <div class="kart">
+                <h3>Bilim Kulübü</h3>
+                <p>Deneyler, araştırmalar ve bilimsel çalışmalar.</p>
+            </div>
+
+            <div class="kart">
+                <h3>Spor Kulübü</h3>
+                <p>Basketbol, voleybol, atletizm ve daha fazlası.</p>
+            </div>
+
+            <div class="kart">
+                <h3>Sanat ve Müzik</h3>
+                <p>Resim, müzik ve sahne sanatları etkinlikleri.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bolum">
+        <h2>Laboratuvar ve Teknoloji İmkanları</h2>
+        <p>
+            Okulumuzda modern teknoloji sınıfları, bilgisayar laboratuvarları, fen bilimleri laboratuvarları ve
+            mühendislik atölyeleri bulunmaktadır. Öğrencilerimiz teorik bilgilerini uygulamalı çalışmalarla
+            pekiştirir.
+        </p>
+    </div>
+
+    <div class="bolum">
+        <h2>Disiplin Kuralları</h2>
+        <p>
+            Disiplin, okulumuzun temel değerlerinden biridir. Öğrencilerimizin düzenli, sorumluluk sahibi ve
+            hedeflerine odaklanmış bireyler olarak yetişmesi için disiplin kurallarımız titizlikle uygulanır.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>

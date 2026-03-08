@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profilim – Gazi Gürkan Taş Anadolu Lisesi</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+    header img { height: 70px; }
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    nav a:hover { color: #d4af37; }
+    .profil-kutu {
+        width: 500px;
+        margin: 80px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 { color: #001a3d; margin-bottom: 20px; text-align: center; }
+    p { font-size: 16px; margin: 10px 0; }
+    button {
+        margin-top: 25px;
+        padding: 12px;
+        width: 100%;
+        background: #001a3d;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover { background: #003b7a; }
+</style>
+<script>
+    // URL’den bilgileri al
+    const params = new URLSearchParams(window.location.search);
+    const ad = params.get("ad");
+    const tc = params.get("tc");
+    const dogum = params.get("dogum");
+    const sinif = params.get("sinif");
+
+    window.onload = function() {
+        document.getElementById("ad").innerText = ad;
+        document.getElementById("tc").innerText = tc;
+        document.getElementById("dogum").innerText = dogum;
+        document.getElementById("sinif").innerText = sinif;
+    }
+
+    function cikisYap() {
+        localStorage.removeItem("giris");
+        alert("Çıkış yapıldı!");
+        window.location.href = "giris.html";
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="profil.html">Profilim</a>
+    </nav>
+</header>
+
+<div class="profil-kutu">
+    <h2>Öğrenci Profilim</h2>
+    <p><strong>Ad Soyad:</strong> <span id="ad"></span></p>
+    <p><strong>TC Kimlik No:</strong> <span id="tc"></span></p>
+    <p><strong>Doğum Tarihi:</strong> <span id="dogum"></span></p>
+    <p><strong>Sınıf:</strong> <span id="sinif"></span></p>
+
+    <button onclick="cikisYap()">Çıkış Yap</button>
+</div>
+
+</body>
+</html>

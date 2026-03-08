@@ -1,0 +1,12 @@
+.kayit-btn {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #001a3d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.kayit-btn:hover {
+    color: #003b7a;
+}

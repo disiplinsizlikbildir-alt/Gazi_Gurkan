@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giriş & Kayıt Merkezi – Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* BAŞLIK */
+    .baslik {
+        background: #001a3d;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .baslik h1 {
+        margin: 0;
+        font-size: 42px;
+        color: #d4af37;
+    }
+
+    .baslik p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* MENÜ KUTULARI */
+    .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+    }
+
+    .kutu {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border-top: 6px solid #001a3d;
+        transition: 0.2s;
+    }
+
+    .kutu:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    .kutu h2 {
+        color: #001a3d;
+        margin-bottom: 15px;
+    }
+
+    .kutu p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .kutu a {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #001a3d;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    .kutu a:hover {
+        background: #003b7a;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+        font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+<div class="baslik">
+    <h1>Giriş & Kayıt Merkezi</h1>
+    <p>Öğrenci, öğretmen ve yönetici giriş işlemleri</p>
+</div>
+
+<div class="container">
+
+    <div class="kutu">
+        <h2>Öğrenci Girişi</h2>
+        <p>Öğrenciler için giriş ekranı</p>
+        <a href="giris.html">Giriş Yap</a>
+    </div>
+
+    <div class="kutu">
+        <h2>Öğretmen Girişi</h2>
+        <p>Öğretmen paneline erişim</p>
+        <a href="ogretmen-giris.html">Giriş Yap</a>
+    </div>
+
+    <div class="kutu">
+        <h2>Yeni Öğrenci Kaydı</h2>
+        <p>Okula yeni kayıt olmak isteyen öğrenciler için</p>
+        <a href="kayit.html">Kayıt Ol</a>
+    </div>
+
+    <div class="kutu">
+        <h2>Yönetici / Admin Girişi</h2>
+        <p>Okul yönetim paneli erişimi</p>
+        <a href="admin-giris.html">Giriş Yap</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>

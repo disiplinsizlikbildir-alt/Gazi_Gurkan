@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kayıt – Gazi Gürkan Taş Anadolu Lisesi</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fa;
+    }
+
+    /* HEADER */
+    header {
+        background: #001a3d;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #d4af37;
+    }
+
+    /* BAŞLIK */
+    .baslik {
+        background: #001a3d;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .baslik h1 {
+        margin: 0;
+        font-size: 42px;
+        color: #d4af37;
+    }
+
+    .baslik p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* FORM ALANI */
+    .container {
+        width: 60%;
+        margin: 40px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+        color: #001a3d;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 25px;
+        padding: 15px;
+        width: 100%;
+        background: #001a3d;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #003b7a;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #001a3d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+</style>
+
+<script>
+function kaydet() {
+    let ad = document.getElementById("ad").value;
+    let tc = document.getElementById("tc").value;
+    let dogum = document.getElementById("dogum").value;
+    let sinif = document.getElementById("sinif").value;
+
+    if(ad === "" || tc === "" || dogum === "") {
+        alert("Lütfen tüm zorunlu alanları doldurunuz.");
+        return;
+    }
+
+    // Profil sayfasına yönlendir
+    window.location.href =
+        "profil.html?ad=" + encodeURIComponent(ad) +
+        "&tc=" + encodeURIComponent(tc) +
+        "&dogum=" + encodeURIComponent(dogum) +
+        "&sinif=" + encodeURIComponent(sinif);
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <img src="LOGO.png" alt="Okul Logosu">
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="egitim.html">Eğitim</a>
+        <a href="duyurular.html">Duyurular</a>
+        <a href="ogretmenler.html">Öğretmenler</a>
+        <a href="kayit.html">Kayıt</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
+
+<div class="baslik">
+    <h1>Öğrenci Kayıt Formu</h1>
+    <p>Disiplinli ve modern eğitim sistemimize katılmak için formu doldurun</p>
+</div>
+
+<div class="container">
+
+    <label>Öğrenci Adı Soyadı *</label>
+    <input id="ad" type="text" required>
+
+    <label>TC Kimlik No *</label>
+    <input id="tc" type="text" maxlength="11" required>
+
+    <label>Doğum Tarihi *</label>
+    <input id="dogum" type="date" required>
+
+    <label>Sınıf Tercihi *</label>
+    <select id="sinif">
+        <option>Hazırlık</option>
+        <option>9. Sınıf</option>
+        <option>10. Sınıf</option>
+        <option>11. Sınıf</option>
+        <option>12. Sınıf</option>
+    </select>
+
+    <label>Adres</label>
+    <textarea id="adres" placeholder="Adresinizi yazabilirsiniz..."></textarea>
+
+<label>Şifre</label>
+<input type="password" id="sifreKayit" placeholder="Şifrenizi belirleyin">
+
+<label>Şifre Tekrar</label>
+<input type="password" id="sifreTekrar" placeholder="Şifrenizi tekrar girin">
+
+    <button onclick="kaydet()">Kaydı Tamamla</button>
+
+</div>
+
+<footer>
+    © 2026 Gazi Gürkan Taş Anadolu Lisesi – Disiplin ve Düzenle Yükseliriz
+</footer>
+
+</body>
+</html>
